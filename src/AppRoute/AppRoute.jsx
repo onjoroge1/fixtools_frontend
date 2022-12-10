@@ -17,11 +17,13 @@ import TimeZone from "../components/timeZone/TimeZone";
 import LanguageTranslator from "../Pages/languageTranslator";
 import TextToPdfFile from "../Pages/textToPdfFile";
 import TimeZoneConverter from "../Pages/timeZoneConverter";
+import Iplocation from "../Pages/Iplocation";
 //
 import RemoveSpaces from "../Pages/RemoveSpaces";
 import SitemapGenerator from "../Pages/SitemapGenerator";
 import CompareTwoStrings from "../Pages/CompareTwoStrings";
 import ExtractEmailAddress from "../Pages/ExtractEmailAddress";
+import ExtractLinks from "../Pages/ExtractLinks";
 
 import { Gradient } from "../Pages/CssTool/Gradient";
 import { BoxShadow } from "../Pages/CssTool/BoxShadow";
@@ -233,6 +235,8 @@ export class AppRoute extends Component {
             <Route path="/RemoveSpaces" element={<RemoveSpaces />} />
             <Route path="/extract_email_address" element={<ExtractEmailAddress />} />
             <Route path="/compare-two-strings" element={<CompareTwoStrings />} /> 
+            <Route path="/extract_links" element={<ExtractLinks />} />
+            <Route path="/find_ip_address" element={<Iplocation />} />
 
             <Route path="/aitools/:id" element={<AIToolsFormatter />} />
             <Route path="/spreadsheet/:id" element={<SpreadSheetGeneretor />} />

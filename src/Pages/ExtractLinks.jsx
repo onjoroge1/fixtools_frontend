@@ -5,7 +5,7 @@ import HeaderNav from '../components/common/HeaderNav'
 import { toast, ToastContainer } from 'react-toastify'
 import { useEffect } from 'react';
 
-export default function RemoveSpaces(){
+export default function ExtractLinks(){
     
     const [formdata, setformdata] = useState('');
     const [result1, setResult1] = useState();
@@ -20,9 +20,16 @@ export default function RemoveSpaces(){
     }
 
     useEffect(() => {
-        document.title = "Remove Spaces from strings, words or paragraphs";
+        document.title = "Extract Links from a string or document";
     }, []);
 
+    const extractLinks = text => {
+        // Use a regular expression to match URLs in the text
+        const urlRegex = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/gi;
+        const links = text.match(urlRegex);
+      
+        return links;
+      };
 
     const handleSubmit = async (e) => {
         setDisableBtn(true)
@@ -30,7 +37,7 @@ export default function RemoveSpaces(){
         setbuttonLoading(true)
 
         try {
-            const result = formdata.trim().replace(/\s+/g, '');
+            const result = extractLinks(formdata);
 
             setResult1(result)
             setbuttonLoading(false)
@@ -81,11 +88,11 @@ export default function RemoveSpaces(){
             <HeaderNav />
             <div className="detail-hero-content">
                 <div className="detail-hero-content-heading">
-                    <h1>Remove Spaces from words
+                    <h1>Extract Links From Text
                     </h1>
                 </div>
                 <div className="detail-hero-content-des">
-                    <p>Copy your text into our online editor to it will quickly and accurately give you a word and character count
+                    <p>This tool makes it fast and easy to find all the links in your text. 
                     </p>
                 </div>
 
@@ -152,14 +159,19 @@ export default function RemoveSpaces(){
         />
 
 <div className="text-body">
-          <h2>What is Word Counter tool?</h2>
-          <p >
           
-          WordCounter is an online service that helps you count words and characters in a piece of text. It is a useful tool for writers, editors, students, and anyone else who needs to keep track of the number of words in a document.
-          </p>
-          <p>Our Word Counter online tool is free to use and can be accessed from any device with an internet connection. All you have to do is copy and paste a piece of text into the text box, and WordCounter will quickly give you a word count and character count. It will also provide an estimated reading time based on the number of words and an approximate speaking time based on the character count.</p>
-          <p>WordCounter can be used for a variety of purposes. Writers can use it to make sure their articles, essays, or blog posts meet word limits, and students can use it to ensure that their essays meet word limits as well. It can also be used to quickly analyze a piece of text and get an idea of its length.</p>
-         
+          <p>Extracting links from text can be a useful skill in many different contexts. For example, you might want to extract links from a blog post or article to create a table of contents, or you might want to extract links from a social media post to see which websites are being shared.</p>
+          <p>There are many different tools and techniques that you can use to extract links from text. In this article, we'll take a closer look at what link extraction is, how it works, and why you might want to use it. We'll also discuss some of the different tools and methods that you can use to extract links from text.</p>
+          <h2>What is link extraction?</h2>
+          <p>Link extraction, also known as URL extraction, is the process of extracting links (also known as URLs, or uniform resource locators) from a piece of text. A link is a string of text that contains the address of a web page, and it typically begins with the http or https protocol.</p>
+          <p>Link extraction involves finding and extracting these links from a piece of text. This can be a useful skill in many different contexts, as we'll discuss in the next section.</p>
+          <h2>Why use link extraction?</h2>
+          <p>There are many different reasons why you might want to use link extraction. Here are just a few examples:</p>
+          <ul>
+            <li>Creating a table of contents: if you're writing a long blog post or article, you might want to create a table of contents that allows readers to quickly jump to different sections of the text. You can use link extraction to quickly generate a list of links to the different sections of your post, making it easy for readers to navigate.</li>
+            <li>Analyzing social media posts: if you're analyzing social media data, you might want to extract links from posts to see which websites are being shared. You can use link extraction to quickly and accurately extract links from social media posts, allowing you to analyze which websites are receiving the most traffic from social media.</li>
+            <li>Cleaning up text: if you have a piece of text that contains a lot of links, it can be difficult to read and understand. You can use link extraction to remove the links</li>
+          </ul>
         </div>
 
         <Footer />

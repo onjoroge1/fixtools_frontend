@@ -5,12 +5,12 @@ import HeaderNav from '../components/common/HeaderNav'
 import { toast, ToastContainer } from 'react-toastify'
 import { useEffect } from 'react';
 
-export default function RemoveSpaces(){
+export default function Iplocation(){
     
     const [formdata, setformdata] = useState('');
     const [result1, setResult1] = useState();
     const [buttonLoading, setbuttonLoading] = useState(false);
-    const [place, setplace] = useState('Start Typing or paste your document here...')
+    const [place, setplace] = useState('Enter ip Address here...')
     const [disableBtn, setDisableBtn] = useState(true)
 
     const handleChange = (e) => {
@@ -23,14 +23,40 @@ export default function RemoveSpaces(){
         document.title = "Remove Spaces from strings, words or paragraphs";
     }, []);
 
+    function getIPInfo(ipAddress) {
+        // Use the fetch API to make a GET request to the IPInfo API
+        fetch(`https://ipinfo.io/${ipAddress}?token=YOUR_API_KEY`)
+          .then(response => response.json()) // Parse the response as JSON
+          .then(data => {
+            // Print the data for the IP address
+            console.log(data);
+      
+            // You can access the destination, latitude, and other information using the corresponding properties
+            console.log(`Destination: ${data.city}, ${data.region}, ${data.country}`);
+            console.log(`Latitude: ${data.loc.split(',')[0]}`);
+            console.log(`Longitude: ${data.loc.split(',')[1]}`);
+            const dest = `Destination: ${data.city}, ${data.region}, ${data.country}`;
+            const lat = `Latitude: ${data.loc.split(',')[0]}`;
+            const long = `Longitude: ${data.loc.split(',')[1]}`;
+
+            return (dest + '\n' + lat + '\n' + long);
+
+            // etc.
+          })
+          .catch(error => {
+            // If there is an error, print it to the console
+            console.error(error);
+          });
+    } 
 
     const handleSubmit = async (e) => {
         setDisableBtn(true)
         e.preventDefault();
         setbuttonLoading(true)
+    
 
         try {
-            const result = formdata.trim().replace(/\s+/g, '');
+            const result = getIPInfo(formdata);
 
             setResult1(result)
             setbuttonLoading(false)
@@ -98,8 +124,8 @@ export default function RemoveSpaces(){
                 <label className="my-1 mr-2"><h2>Input</h2></label>
                 <form className="" role="form" onSubmit={handleSubmit} >
                     <div className="form-group">
-                        <textarea required className="form-control" placeholder={place} rows="4" id="input-comment"
-                            onChange={handleChange} style={{ fontSize: '1.5rem' }}></textarea>
+                        <input required className="form-control" placeholder={place} rows="4" id="input-comment"
+                            onChange={handleChange} style={{ fontSize: '1.5rem' }} />
                     </div>
                     <p></p>
                     <div className="d-grid gap-3 col-md-2">
@@ -152,14 +178,7 @@ export default function RemoveSpaces(){
         />
 
 <div className="text-body">
-          <h2>What is Word Counter tool?</h2>
-          <p >
-          
-          WordCounter is an online service that helps you count words and characters in a piece of text. It is a useful tool for writers, editors, students, and anyone else who needs to keep track of the number of words in a document.
-          </p>
-          <p>Our Word Counter online tool is free to use and can be accessed from any device with an internet connection. All you have to do is copy and paste a piece of text into the text box, and WordCounter will quickly give you a word count and character count. It will also provide an estimated reading time based on the number of words and an approximate speaking time based on the character count.</p>
-          <p>WordCounter can be used for a variety of purposes. Writers can use it to make sure their articles, essays, or blog posts meet word limits, and students can use it to ensure that their essays meet word limits as well. It can also be used to quickly analyze a piece of text and get an idea of its length.</p>
-         
+  
         </div>
 
         <Footer />
