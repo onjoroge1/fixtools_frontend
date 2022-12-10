@@ -8,19 +8,11 @@
 }
 
 .text-body{
-  padding: 4rem;
-  color: wheat;
-  background: rgba(88, 93, 95, 0.05);
-  box-shadow: rgb(0 0 0 / 12%) 0px 0.3rem 0.8rem;
-  max-width: 100%;
-  width: 100%;
-  min-width: 26rem;
-  opacity: 0.95;
-  transition-duration: 0.2s;
-  padding-left: '40px';
-  padding-right: '20px';
-  padding-bottom: '48px';
-  padding-top: '24px';
+	font-size: 1.8rem;
+  line-height: 2.8rem;
+  margin: 0 auto 1.6rem;
+  max-width: 80rem;
+  padding: 4rem 8rem;
 }
 
 .text-body > p{
@@ -29,6 +21,11 @@
 
 .text-body > h2{
   color: black;
+  font-size: 24px;
+  font-weight: 900;
+  margin-block-start: 4rem;
+  font-size: 3rem;
+  margin-block-end: 2rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {

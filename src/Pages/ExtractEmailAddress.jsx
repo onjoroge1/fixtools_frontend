@@ -158,18 +158,18 @@ export default function ExtractEmailAddress(){
             theme="dark"
         />
 
-<div className="container-fluid row text-body" style={{ paddingLeft: '20px', paddingRight: '20px'}}>
+<div className="text-body">
           
           <p >Extracting email addresses from text can be a tedious and time-consuming task. Whether you're trying to compile a list of email addresses for marketing purposes, or you need to quickly locate an email address in a long document, manually scanning through the text to find email addresses can be a frustrating experience.</p>
           <p>That's where an email extraction tool comes in. These tools make it easy to quickly and accurately extract email addresses from any text, saving you time and hassle. In this article, we'll take a closer look at what email extraction tools are, how they work, and why you might want to use one.</p>
-          <h2 style={{paddingBottom: '10px'}}>What is an email extraction tool?</h2>
+          <h2>What is an email extraction tool?</h2>
           <p>An email extraction tool is a piece of software that automatically scans through a piece of text and extracts any email addresses that it finds. These tools use advanced algorithms and regular expressions to accurately identify email addresses, even in complex or poorly-formatted text.</p>
           <p>Typically, email extraction tools allow you to either paste in the text that you want to search, or provide a file that the tool will scan. The tool will then scan the text and extract any email addresses that it finds, typically presenting them in a list or table for easy reference.</p>
-          <h2 style={{paddingBottom: '10px'}}>How do email extraction tools work?</h2>
+          <h2>How do email extraction tools work?</h2>
           <p>Email extraction tools work by using regular expressions to identify email addresses in the text. A regular expression is a sequence of characters that forms a search pattern. These patterns can be used to match specific strings or sets of strings, such as email addresses.</p>
           <p>When an email extraction tool scans a piece of text, it uses a regular expression to search for patterns that match the format of an email address. For example, a regular expression might look for the @ symbol, followed by a series of letters, numbers, and/or symbols, followed by a period (.) and another series of letters. If the tool finds a string that matches this pattern, it will extract it as an email address.</p>
           <p>Some email extraction tools also use advanced algorithms to improve their accuracy. These algorithms can take into account factors such as common email address formats and common misspellings, to ensure that the tool extracts as many valid email addresses as possible.</p>
-          <h2 style={{paddingBottom: '10px'}}>Why use an email extraction tool?</h2>
+          <h2>Why use an email extraction tool?</h2>
           <p>There are several reasons why you might want to use an email extraction tool. Here are just a few examples:</p>
           <ul>
             <li>Time-saving: manually scanning through a long document to find email addresses can be a tedious and time-consuming process. An email extraction tool can save you hours of time by quickly and accurately locating all the email addresses in your text.</li>

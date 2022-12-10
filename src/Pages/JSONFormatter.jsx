@@ -147,23 +147,8 @@ export default function JSONFormatter() {
         pauseOnHover
         theme="dark"
       />
-        <div className="container" style={{ 
-                     paddingLeft: '0', 
-                     paddingRight: '20px', 
-                     paddingBottom: '48px', 
-                     paddingTop: '24px',  
-                     color: 'wheat',
-                     background: '#011638',
-                     border: '1px solid #fff',
-                    borderRadius: '0.8rem',
-                    boxShadow: '0 0.3rem 0.8rem rgb(0 0 0 / 12%)',
-                    maxWidth: '100%',
-                    width: '100%',
-                    minWidth: '26rem',
-                    opacity: '.95',
-                    padding: '4rem',
-                    transitionDuration: '.2s'}}>
-          <h2 style={{paddingBottom: '10px'}}>Welcome to our JSON Minify Generator!</h2>
+        <div className="text-body">
+          <h2>Welcome to our JSON Minify Generator!</h2>
           <p >
           
           Are you looking for a way to reduce the size of your JavaScript Object Notation (JSON) 
@@ -182,14 +167,12 @@ export default function JSONFormatter() {
           look
           </p>
 
-          <h2 style={{paddingTop: '48px', paddingBottom: '10px'}}>what is a json formatter?</h2>
+          <h2>what is a json formatter?</h2>
         <p>A JSON Formatter is a tool used for formatting and validating JSON data. 
           It helps to improve the readability and structure of JSON documents, making 
           them easier to read and debug. A JSON Formatter can also be used to check for syntax 
           errors in the JSON data and to validate the JSON data against a JSON schema.</p>
         </div>
-
-      
       <Footer />
     </div>
   );

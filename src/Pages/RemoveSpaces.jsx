@@ -151,11 +151,9 @@ export default function RemoveSpaces(){
             theme="dark"
         />
 
-<div className="container-fluid row text-body" style={{ paddingLeft: '20px', paddingRight: '20px'}}>
-          <h2 style={{paddingBottom: '10px'}}>What is Word Counter tool?</h2>
-          <p >
-          
-          WordCounter is an online service that helps you count words and characters in a piece of text. It is a useful tool for writers, editors, students, and anyone else who needs to keep track of the number of words in a document.
+<div className="text-body">
+          <h2>What is Word Counter tool?</h2>
+          <p >WordCounter is an online service that helps you count words and characters in a piece of text. It is a useful tool for writers, editors, students, and anyone else who needs to keep track of the number of words in a document.
           </p>
           <p>Our Word Counter online tool is free to use and can be accessed from any device with an internet connection. All you have to do is copy and paste a piece of text into the text box, and WordCounter will quickly give you a word count and character count. It will also provide an estimated reading time based on the number of words and an approximate speaking time based on the character count.</p>
           <p>WordCounter can be used for a variety of purposes. Writers can use it to make sure their articles, essays, or blog posts meet word limits, and students can use it to ensure that their essays meet word limits as well. It can also be used to quickly analyze a piece of text and get an idea of its length.</p>
