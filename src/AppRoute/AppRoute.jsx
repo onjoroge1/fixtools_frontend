@@ -8,6 +8,7 @@ import JSONFormatter from "../Pages/JSONFormatter";
 import CSSFormatter from "../Pages/CSSFormatter";
 import HTMLFormatter from "../Pages/HTMLFormatter";
 import MinifyHTML from "../Pages/MinifyHTML";
+import WordcountTool from "../Pages/WordCountTool";
 import AIToolsFormatter from "../Pages/AIToolsFormatter";
 import SpreadSheetGeneretor from "../Pages/spreadsheetGenerator/spreadSheetGeneretor";
 import TranslateProgrammingLanguages from "../Pages/translateProgrammingLanguages/TranslateProgrammingLanguages";
@@ -17,6 +18,11 @@ import LanguageTranslator from "../Pages/languageTranslator";
 import TextToPdfFile from "../Pages/textToPdfFile";
 import TimeZoneConverter from "../Pages/timeZoneConverter";
 //
+import RemoveSpaces from "../Pages/RemoveSpaces";
+import SitemapGenerator from "../Pages/SitemapGenerator";
+import CompareTwoStrings from "../Pages/CompareTwoStrings";
+import ExtractEmailAddress from "../Pages/ExtractEmailAddress";
+
 import { Gradient } from "../Pages/CssTool/Gradient";
 import { BoxShadow } from "../Pages/CssTool/BoxShadow";
 import { TextShadow } from "../Pages/CssTool/TextShadow";
@@ -102,6 +108,7 @@ import TsvToJson from "../Pages/JsonTool/TsvToJson";
 import JsonToTsv from "../Pages/JsonTool/JsonToTsv";
 import { NotFound } from "../Pages/404";
 import ScrollTop from "../components/ScrollToTop";
+
 export class AppRoute extends Component {
   render() {
     return (
@@ -117,6 +124,7 @@ export class AppRoute extends Component {
             <Route path="/jsonformatter" element={<JSONFormatter />} />
             <Route path="/CSSformatter" element={<CSSFormatter />} />
 
+            <Route path="/WordCountTool" element={<WordcountTool/>} />
             <Route path="/box-shadow" element={<BoxShadow />} />
             <Route path="/text-shadow" element={<TextShadow />} />
             <Route path="/css-column" element={<ColumnGen />} />
@@ -221,6 +229,10 @@ export class AppRoute extends Component {
             <Route path="/csv-to-json" element={<CsvToJson />} />
             <Route path="/tsv-to-json" element={<TsvToJson />} />
             <Route path="/json-to-tsv" element={<JsonToTsv />} />
+            <Route path="/SitemapGenerator" element={<SitemapGenerator />} />
+            <Route path="/RemoveSpaces" element={<RemoveSpaces />} />
+            <Route path="/extract_email_address" element={<ExtractEmailAddress />} />
+            <Route path="/compare-two-strings" element={<CompareTwoStrings />} /> 
 
             <Route path="/aitools/:id" element={<AIToolsFormatter />} />
             <Route path="/spreadsheet/:id" element={<SpreadSheetGeneretor />} />

@@ -3,7 +3,7 @@ const JsonTool = [
     id: 1041,
     image: "images/json-file.png",
     title: "JSON Minify Generator",
-    category: "JSON Tools",
+    category: "JSON Tools", 
     categorysty: "dec",
     type: "",
     link: "/MinifyJSON",

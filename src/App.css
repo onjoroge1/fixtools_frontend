@@ -7,6 +7,30 @@
   pointer-events: none;
 }
 
+.text-body{
+  padding: 4rem;
+  color: wheat;
+  background: rgba(88, 93, 95, 0.05);
+  box-shadow: rgb(0 0 0 / 12%) 0px 0.3rem 0.8rem;
+  max-width: 100%;
+  width: 100%;
+  min-width: 26rem;
+  opacity: 0.95;
+  transition-duration: 0.2s;
+  padding-left: '40px';
+  padding-right: '20px';
+  padding-bottom: '48px';
+  padding-top: '24px';
+}
+
+.text-body > p{
+  color: black;
+}
+
+.text-body > h2{
+  color: black;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

@@ -115,6 +115,16 @@ export default function Header() {
             >
               Conversion Tools
             </Button>
+            <Button
+              className={
+                activeTab == "Text Tools"
+                  ? "hero-content-nav-btn homebtn "
+                  : "hero-content-nav-btn"
+              }
+              onClick={() => filterItems("Text Tools")}
+            >
+              Text Tools
+            </Button>
           </div>
         </div>
       </div>
