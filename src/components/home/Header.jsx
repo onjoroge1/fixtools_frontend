@@ -1,19 +1,19 @@
-import React, { useState } from "react";
-import { Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import HeaderNav from "../common/HeaderNav";
-import "./header.css";
-import data from "../../dbTool";
-import { useEffect } from "react";
+import React, { useState } from 'react';
+import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import HeaderNav from '../common/HeaderNav';
+import './header.css';
+import data from '../../dbTool';
+import { useEffect } from 'react';
 
 export default function Header() {
   const [cards, setCards] = useState(data);
   const [filteredCard, setfilteredCard] = useState(data);
-  const [activeTab, setactiveTab] = useState("All");
+  const [activeTab, setactiveTab] = useState('All');
 
-  useEffect(()=>{
-    document.title="Fixtools"
-  },[])
+  useEffect(() => {
+    document.title = 'Fixtools';
+  }, []);
 
   if (!cards) {
     return <h1>Loading</h1>;
@@ -21,7 +21,7 @@ export default function Header() {
 
   const filterItems = (cate) => {
     setactiveTab(cate);
-    if (cate === "All") {
+    if (cate === 'All') {
       setfilteredCard(cards);
     } else {
       const updateCards = cards.filter(
@@ -33,26 +33,26 @@ export default function Header() {
 
   return (
     <div>
-      <div className="hero">
+      <div className='hero'>
         <HeaderNav />
-        <div className="hero-content">
-          <div className="hero-content-heading">
+        <div className='hero-content'>
+          <div className='hero-content-heading'>
             <h1>Tools To Fix File Problems</h1>
           </div>
-          <div className="hero-content-des">
+          <div className='hero-content-des'>
             <p>
               Find below a collection of tools to help with any of your file
               needs.
             </p>
           </div>
-          <div className="hero-content-nav">
+          <div className='hero-content-nav'>
             <Button
               className={
-                activeTab === "All"
-                  ? "hero-content-nav-btn homebtn"
-                  : "hero-content-nav-btn"
+                activeTab === 'All'
+                  ? 'hero-content-nav-btn homebtn'
+                  : 'hero-content-nav-btn'
               }
-              onClick={() => filterItems("All")}
+              onClick={() => filterItems('All')}
             >
               All
             </Button>
@@ -67,66 +67,92 @@ export default function Header() {
             </Button> */}
             <Button
               className={
-                activeTab === "CSS Tools"
-                  ? "hero-content-nav-btn homebtn "
-                  : "hero-content-nav-btn"
+                activeTab === 'CSS Tools'
+                  ? 'hero-content-nav-btn homebtn '
+                  : 'hero-content-nav-btn'
               }
-              onClick={() => filterItems("CSS Tools")}
+              onClick={() => filterItems('CSS Tools')}
             >
               CSS Tools
             </Button>
             <Button
               className={
-                activeTab === "JSON Tools"
-                  ? "hero-content-nav-btn homebtn "
-                  : "hero-content-nav-btn"
+                activeTab === 'JSON Tools'
+                  ? 'hero-content-nav-btn homebtn '
+                  : 'hero-content-nav-btn'
               }
-              onClick={() => filterItems("JSON Tools")}
+              onClick={() => filterItems('JSON Tools')}
             >
               JSON Tools
             </Button>
             <Button
               className={
-                activeTab === "HTML Tools"
-                  ? "hero-content-nav-btn homebtn "
-                  : "hero-content-nav-btn"
+                activeTab === 'HTML Tools'
+                  ? 'hero-content-nav-btn homebtn '
+                  : 'hero-content-nav-btn'
               }
-              onClick={() => filterItems("HTML Tools")}
+              onClick={() => filterItems('HTML Tools')}
             >
               HTML Tools
             </Button>
             <Button
               className={
-                activeTab === "AI Tools"
-                  ? "hero-content-nav-btn homebtn "
-                  : "hero-content-nav-btn"
+                activeTab === 'AI Tools'
+                  ? 'hero-content-nav-btn homebtn '
+                  : 'hero-content-nav-btn'
               }
-              onClick={() => filterItems("AI Tools")}
+              onClick={() => filterItems('AI Tools')}
             >
               AI Tools
             </Button>
             <Button
               className={
-                activeTab == "Conversion Tools"
-                  ? "hero-content-nav-btn homebtn "
-                  : "hero-content-nav-btn"
+                activeTab == 'Conversion Tools'
+                  ? 'hero-content-nav-btn homebtn '
+                  : 'hero-content-nav-btn'
               }
-              onClick={() => filterItems("Conversion Tools")}
+              onClick={() => filterItems('Conversion Tools')}
             >
               Conversion Tools
+            </Button>
+            <Button
+              className={
+                activeTab == 'Text Tools'
+                  ? 'hero-content-nav-btn homebtn '
+                  : 'hero-content-nav-btn'
+              }
+              onClick={() => filterItems('Text Tools')}
+            >
+              Text Tools
+            </Button>
+            <Button
+              className={
+                activeTab == 'SEO Tools'
+                  ? 'hero-content-nav-btn homebtn '
+                  : 'hero-content-nav-btn'
+              }
+              onClick={() => filterItems('SEO Tools')}
+            >
+              SEO Tools
             </Button>
           </div>
         </div>
       </div>
-      <div className="main-content">
+      <div className='main-content'>
         {filteredCard.map((ele) => {
           const { id, title, image, desc, category, categorysty, link } = ele;
           return (
             <Link to={link}>
-              <div className={`main-content-card ${categorysty}`} key={id}>
-                <img src={image} alt="" />
-                <h2 className="main-content-card-heading">{title}</h2>
-                <p className="card-des">{desc}</p>
+              <div
+                className={`main-content-card ${categorysty}`}
+                key={id}
+              >
+                <img
+                  src={image}
+                  alt=''
+                />
+                <h2 className='main-content-card-heading'>{title}</h2>
+                <p className='card-des'>{desc}</p>
               </div>
             </Link>
           );

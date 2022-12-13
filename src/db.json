@@ -486,6 +486,16 @@
       "type":"presurre conversion",
       "link":"/conversiontools/presurreConversion",
       "desc":"currencyExchange"
+    },
+    {
+      "id": 93,
+      "image": "images/keyword selection.svg",
+      "title": "Word Count Tool",
+      "category": "Text Tools",
+      "categorysty": "dec",
+      "type":"Word Count Tool",
+      "link":"/WordCountTool",
+      "desc":"Generate word count and character count for your document"
     }
   ]
   

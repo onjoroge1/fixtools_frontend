@@ -7,6 +7,28 @@
   pointer-events: none;
 }
 
+.text-body{
+	font-size: 1.8rem;
+  line-height: 2.8rem;
+  margin: 0 auto 1.6rem;
+  max-width: 80rem;
+  padding: 4rem 8rem;
+}
+
+.text-body > p{
+  color: black;
+}
+
+.text-body > h2{
+  color: black;
+  font-size: 24px;
+  font-weight: 900;
+  margin-block-start: 4rem;
+  font-size: 3rem;
+  margin-block-end: 2rem;
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

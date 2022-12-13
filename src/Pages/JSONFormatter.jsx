@@ -147,6 +147,32 @@ export default function JSONFormatter() {
         pauseOnHover
         theme="dark"
       />
+        <div className="text-body">
+          <h2>Welcome to our JSON Minify Generator!</h2>
+          <p >
+          
+          Are you looking for a way to reduce the size of your JavaScript Object Notation (JSON) 
+          files? Our JSON Minify Generator is the perfect tool for you. Using our generator, 
+          you can quickly and easily convert your JSON files into a smaller, more efficient format.
+          </p>With our JSON Minify Generator, you can minify your JSON files in just a few clicks. 
+          <p>All you need to do is upload your JSON file and let our generator do the work for you. 
+          Once you've uploaded your file, our generator will automatically minify it, 
+          reducing the size and improving readability.</p><p>The JSON Minify Generator also removes 
+          unnecessary whitespace and comments, making your JSON files easier to read and understand. 
+          This can save you time and effort when editing or debugging your code.</p><p>Our JSON Minify 
+          Generator is also completely free to use. No matter how big or small your JSON files are, 
+          you can rest assured that our generator will minify them quickly and efficiently. You can also 
+          save your minified files to your device — perfect for sharing with others or keeping as a backup.
+          </p><p>So, if you're looking for an easy and effective way to reduce the size of your JSON files, 
+          look
+          </p>
+
+          <h2>what is a json formatter?</h2>
+        <p>A JSON Formatter is a tool used for formatting and validating JSON data. 
+          It helps to improve the readability and structure of JSON documents, making 
+          them easier to read and debug. A JSON Formatter can also be used to check for syntax 
+          errors in the JSON data and to validate the JSON data against a JSON schema.</p>
+        </div>
       <Footer />
     </div>
   );
