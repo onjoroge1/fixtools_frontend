@@ -1,38 +1,38 @@
-import React, { useState, useEffect } from "react";
-import HeaderNav from "../../components/common/HeaderNav";
-import Footer from "../../components/home/Footer/Footer";
-import { StyledConversionTool, StyledFlexContainer } from "./styled";
-import StyledContainer from "../../components/StyledContainer";
+import React, { useState, useEffect } from 'react';
+import HeaderNav from '../../components/common/HeaderNav';
+import Footer from '../../components/home/Footer/Footer';
+import { StyledConversionTool, StyledFlexContainer } from './styled';
+import StyledContainer from '../../components/StyledContainer';
 
-import { hoursArr, minutesArr, timeZoneData } from "./timeZoneData";
-import timeZoneFunction from "./timeZoneFunctionalities";
+import { hoursArr, minutesArr, timeZoneData } from './timeZoneData';
+import timeZoneFunction from './timeZoneFunctionalities';
 
 const TimeZoneConverter = () => {
   const [formData, setFormData] = useState({
-    convertFrom: "",
-    convertTo: "",
-    time: "",
-    amPm: "am/pm",
+    convertFrom: '',
+    convertTo: '',
+    time: '',
+    amPm: 'am/pm',
   });
-  const [result, setResult] = useState("");
+  const [result, setResult] = useState('');
 
   const { amPm, convertFrom, convertTo, time } = formData;
 
-  const hours = time.split(":")[0];
-  const minutes = time.split(":")[1];
+  const hours = time.split(':')[0];
+  const minutes = time.split(':')[1];
 
   useEffect(() => {
-    document.title="Time Zone Conversion"
+    document.title = 'Time Zone Conversion';
     console.log(hours);
     const date = new Date();
     date.setHours(hours);
     const convention = date
-      .toLocaleTimeString("en-US", {
-        hour: "numeric",
-        hour12: "true",
-        minute: "numeric",
+      .toLocaleTimeString('en-US', {
+        hour: 'numeric',
+        hour12: 'true',
+        minute: 'numeric',
       })
-      .split(" ")[1];
+      .split(' ')[1];
     // console.log("bahubaki", convention);
     if (hours) {
       setFormData((prevState) => {
@@ -55,10 +55,10 @@ const TimeZoneConverter = () => {
     date.setHours(timeZoneFunction(convertFrom, convertTo, hours));
     // console.log(Number(hours) - 1);
     date.setMinutes(minutes);
-    const time = date.toLocaleTimeString("en-US", {
-      hour: "numeric",
+    const time = date.toLocaleTimeString('en-US', {
+      hour: 'numeric',
       hour12: true,
-      minute: "numeric",
+      minute: 'numeric',
     });
     // console.log(time);
     setResult(time);
@@ -68,23 +68,27 @@ const TimeZoneConverter = () => {
     <>
       <HeaderNav />
       <StyledConversionTool>
-        <div className="conversion-tools-container">
+        <div className='conversion-tools-container'>
           <StyledContainer>
             <form onSubmit={submitHandler}>
-              <div className="text">
-                <h1 className="main-heading">Time Zone Conversion</h1>
-                <p className="tag-line">Convert time zone.</p>
+              <div className='text'>
+                <h1 className='main-heading'>Time Zone Conversion</h1>
+                <p className='tag-line'>Convert time zone.</p>
               </div>
               <StyledFlexContainer>
-                <div className="select-container">
-                  <div className="from-to">
-                    <div className="from">
+                <div className='select-container'>
+                  <div className='from-to'>
+                    <div className='from'>
                       <select
-                        id="convertFrom"
+                        id='convertFrom'
                         value={convertFrom}
                         onChange={changeHandler}
                       >
-                        <option value="" disabled selected>
+                        <option
+                          value=''
+                          disabled
+                          selected
+                        >
                           Convert From
                         </option>
                         {timeZoneData.map((data) => (
@@ -92,13 +96,17 @@ const TimeZoneConverter = () => {
                         ))}
                       </select>
                     </div>
-                    <div className="to">
+                    <div className='to'>
                       <select
-                        id="convertTo"
+                        id='convertTo'
                         value={convertTo}
                         onChange={changeHandler}
                       >
-                        <option value="" disabled selected>
+                        <option
+                          value=''
+                          disabled
+                          selected
+                        >
                           Convert To
                         </option>
                         {timeZoneData.map((data) => (
@@ -108,38 +116,38 @@ const TimeZoneConverter = () => {
                     </div>
                   </div>
                 </div>
-                <div className="time-selector-inputs-container">
-                  <div className="time-input-cnt">
+                <div className='time-selector-inputs-container'>
+                  <div className='time-input-cnt'>
                     <input
-                      type="time"
-                      id="time"
+                      type='time'
+                      id='time'
                       onChange={changeHandler}
                       value={time}
                     />
-                    <div className="time-format">{amPm}</div>
+                    <div className='time-format'>{amPm}</div>
                   </div>
                 </div>
               </StyledFlexContainer>
-              <div className="button-container">
+              <div className='button-container'>
                 <button
                   className={`${
                     convertFrom && convertTo && hours && minutes
-                      ? ""
-                      : "btn-disable"
+                      ? ''
+                      : 'btn-disable'
                   }`}
                   disabled={`${
-                    convertFrom && convertTo && hours && minutes ? "" : "true"
+                    convertFrom && convertTo && hours && minutes ? '' : 'true'
                   }`}
-                  type="submit"
+                  type='submit'
                 >
                   Convert
                 </button>
               </div>
             </form>
-            <div className="result-container">
-              <div className="result">
-              <h1>Output</h1>
-                <div>{result}</div> {`${result ? convertTo : ""}`}
+            <div className='result-container'>
+              <div className='result'>
+                <h1>Output</h1>
+                <div>{result}</div> {`${result ? convertTo : ''}`}
               </div>
             </div>
           </StyledContainer>

@@ -207,7 +207,8 @@ if(selectedItem){
 
     try {
       const response = await fetch(
-        `https://fixtoolupdateninenovember.herokuapp.com/api/${apiParamEndPoint}`,
+        `http://localhost:4000/api/${apiParamEndPoint}`,
+
         {
           method: "POST",
           headers: {
