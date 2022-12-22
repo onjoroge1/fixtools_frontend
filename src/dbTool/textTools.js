@@ -1,23 +1,13 @@
 const textTool = [
   {
-    id: 20870,
-    image: 'images/card-icon-21.png',
-    title: 'Minify CSS',
-    category: 'Text Tools',
-    categorysty: 'dec',
-    type: '',
-    link: '/WordCountTool',
-    desc: 'Minify / compress CSS objects',
-  },
-  {
     id: 6785,
     image: 'images/card-icon-21.png',
     title: 'Remove Space',
     category: 'Text Tools',
     categorysty: 'dec',
     type: '',
-    link: '/WordCountTool',
-    desc: 'Minify / compress CSS objects',
+    link: '/RemoveSpaces',
+    desc: 'Tool for removing spaces',
   },
   {
     id: 220870,
@@ -26,8 +16,8 @@ const textTool = [
     category: 'Text Tools',
     categorysty: 'dec',
     type: '',
-    link: '/WordCountTool',
-    desc: 'Minify / compress CSS objects',
+    link: '/extract_email_address',
+    desc: 'Tool for removing Extracting Email',
   },
   {
     id: 2670870,
@@ -36,8 +26,8 @@ const textTool = [
     category: 'Text Tools',
     categorysty: 'dec',
     type: '',
-    link: '/WordCountTool',
-    desc: 'Minify / compress CSS objects',
+    link: '/extract_links',
+    desc: 'Tool for Extracting Link',
   },
 ];
 

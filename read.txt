@@ -1,7 +1,7 @@
 Fix Tools
 
 => so if you want to create seperate tools category, than create seperate file in dbTool folder and add tools array in that file and than import that array in
- same folder index.js file and than spread that array file in Data array eg : data = [aiTools,...textTools];
+ same folder index.js file and than spread that array file in Data array in index.js eg : data = [aiTools,...textTools];
  
 => Note every tools should have unique number id i.e  {id:5000} and shuld have same category eg ('Text Tools'). otherwise tool will be not displayed on seperate category page
 
