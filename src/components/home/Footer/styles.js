@@ -1,19 +1,20 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 import {
   footerFonts,
   footerLinksMarginBottom,
-} from "../../GlobalsStyles/GlobalsStyles";
+} from '../../GlobalsStyles/GlobalsStyles';
 
 const StyledFooter = styled.footer`
-  /* background-color: red; */
   padding-top: 32px;
-  padding-left: 8px;
-  padding-right: 8px;
+  /* padding-left: 8px; */
+  /* padding-right: 8px; */
   border-top: 1px solid #e8e8e8;
 `;
 
 const FooterTopSection = styled.section`
-  /* background-color: red; */
+  padding-left: 8px;
+  padding-right: 8px;
+
   padding-bottom: 60px;
   border-bottom: 1px solid #e8e8e8;
   .logo-container {
@@ -63,7 +64,7 @@ const FooterLinksContainer = styled.div`
   }
 `;
 const FooterMiddleSection = styled.div`
-  padding: 30px 4px;
+  padding: 30px 8px;
 
   .social-media-icons-container {
     img {
@@ -93,9 +94,13 @@ const FooterMiddleSection = styled.div`
 `;
 
 const FooterBottomSection = styled.div`
+  padding-left: 8px;
+  padding-right: 8px;
   background-color: rgb(244, 244, 244);
+
   padding-top: 20px;
   padding-bottom: 20px;
+
   p {
     font-family: ${footerFonts};
     color: #1a1a1a;

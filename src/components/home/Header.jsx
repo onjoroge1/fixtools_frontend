@@ -11,6 +11,8 @@ export default function Header() {
   const [filteredCard, setfilteredCard] = useState(data);
   const [activeTab, setactiveTab] = useState('All');
 
+  console.log('----==>> ', data);
+
   useEffect(() => {
     document.title = 'Fixtools';
   }, []);
