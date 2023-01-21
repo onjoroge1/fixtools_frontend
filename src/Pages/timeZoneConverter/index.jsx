@@ -7,6 +7,11 @@ import StyledContainer from '../../components/StyledContainer';
 import { hoursArr, minutesArr, timeZoneData } from './timeZoneData';
 import timeZoneFunction from './timeZoneFunctionalities';
 
+import SEO from '../../components/SEO';
+import conversionToolsDb from '../../dbTool/conversionToolsDb';
+import { useLocation } from 'react-router-dom';
+import { GetCurrentPageContent } from '../../utils';
+
 const TimeZoneConverter = () => {
   const [formData, setFormData] = useState({
     convertFrom: '',
@@ -15,6 +20,11 @@ const TimeZoneConverter = () => {
     amPm: 'am/pm',
   });
   const [result, setResult] = useState('');
+
+  const location = useLocation();
+  const path = location.pathname;
+  const { title, desc, image } = GetCurrentPageContent(path, conversionToolsDb);
+  const pageUrl = window.location.href;
 
   const { amPm, convertFrom, convertTo, time } = formData;
 
@@ -66,6 +76,13 @@ const TimeZoneConverter = () => {
 
   return (
     <>
+      <SEO
+        title={title}
+        metaDescription={desc}
+        ogImageUrl={image}
+        ogImageAlt={`${title} image`}
+        ogUrl={pageUrl}
+      />
       <HeaderNav />
       <StyledConversionTool>
         <div className='conversion-tools-container'>

@@ -8,6 +8,9 @@ import StyledContainer from "../../components/StyledContainer";
 
 import { StyledTranslateProgrammingLan } from "./styled";
 
+
+
+
 const TranslateProgrammingLanguages = () => {
   const { id } = useParams();
 
@@ -16,6 +19,8 @@ const TranslateProgrammingLanguages = () => {
   const [buttonLoading, setbuttonLoading] = useState(false);
   const [selectedItem, setselectedItem] = useState("");
   const [disableBtn,setDisableBtn] = useState(true)
+
+
 
   const [programmingLanguageData, setPrpogrammingLanguageData] = useState({
     from: "",
@@ -79,91 +84,11 @@ const TranslateProgrammingLanguages = () => {
     console.log(result.trim().split("\n"));
   }
 
-  // return (
-  //   <div>
-  //     <HeaderNav />
 
-  //     <div
-  //       className="tools-for-better-thinking"
-  //       style={{ padding: "5rem 0px 5rem 0px" }}
-  //     >
-  //       <div className="container">
-  //         <div className="ai_tools_heading">
-  //           <h1>{selectedItem.title}</h1>
-  //         </div>
-  //         <div className="ai_tools_description">
-  //           <p>{selectedItem.desc}</p>
-  //         </div>
-
-  //         <div className="row">
-  //           <div className="col-md-12 col-lg-6">
-  //             <form onSubmit={handleSubmit}>
-  //               <div className="form-group">
-  //                 <div className="form-inp-container">
-  //                   <div className="inp-cnt">
-  //                     <div className="inp">
-  //                       <label for="from">From</label>
-  //                       <input
-  //                         id="from"
-  //                         value={from}
-  //                         onChange={programmingLanguageChangeHandler}
-  //                         type="text"
-  //                         placeholder="eg: javascript"
-  //                       />
-  //                     </div>
-  //                     <div className="inp">
-  //                       <label for="to">To</label>
-  //                       <input
-  //                         id="to"
-  //                         value={to}
-  //                         onChange={programmingLanguageChangeHandler}
-  //                         type="text"
-  //                         placeholder="eg: python"
-  //                       />
-  //                     </div>
-  //                   </div>
-  //                   <div className="text-area-cnt">
-  //                     <label for="code">Write Code Here</label>
-  //                     <textarea
-  //                       name=""
-  //                       id="code"
-  //                       onChange={programmingLanguageChangeHandler}
-  //                     ></textarea>
-  //                   </div>
-  //                 </div>
-  //                 <button
-  //                   className="btn btn-primary btn-block w-100 p-3 mt-4 sub-btn"
-  //                   style={{ fontSize: "16px" }}
-  //                   disabled={programmingLanguageData == ""}
-  //                 >
-  //                   {buttonLoading ? (
-  //                     <div class="spinner-border text-dark" role="status">
-  //                       <span class="sr-only">Loading...</span>
-  //                     </div>
-  //                   ) : (
-  //                     "Submit"
-  //                   )}
-  //                 </button>
-  //               </div>
-  //             </form>
-  //           </div>
-  //           <div className="col-md-12 col-lg-6 ai-tools-results">
-  //             {result
-  //               ?.trim()
-  //               .split("\n")
-  //               .map((data) => {
-  //                 return <div>{data}</div>;
-  //               })}
-  //           </div>
-  //         </div>
-  //       </div>
-  //     </div>
-  //     <Footer />
-  //   </div>
-  // );
 
   return (
     <>
+    
       <HeaderNav />
       <StyledTranslateProgrammingLan>
         <StyledContainer>

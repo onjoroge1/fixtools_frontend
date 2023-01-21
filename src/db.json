@@ -1,14 +1,13 @@
 {
   "cards": [
-   
     {
       "id": 40,
       "image": "images/card-icon-21.png",
       "title": "Minify CSS",
       "category": "CSS Tools",
       "categorysty": "dec",
-      "type":"",
-      "link":"/MinifyCSS",
+      "type": "",
+      "link": "/MinifyCSS",
       "desc": "Minify / compress CSS objects"
     },
     {
@@ -17,8 +16,8 @@
       "title": "Minify JSON",
       "category": "JSON Tools",
       "categorysty": "dec",
-      "type":"",
-      "link":"/MinifyJSON",
+      "type": "",
+      "link": "/MinifyJSON",
       "desc": "Minify / compress JSON objects"
     },
     {
@@ -27,8 +26,8 @@
       "title": "Json Formatter",
       "category": "JSON Tools",
       "categorysty": "dec",
-      "type":"",
-      "link":"/jsonformatter",
+      "type": "",
+      "link": "/jsonformatter",
       "desc": "Beaufity and Format your JSON files"
     },
     {
@@ -37,8 +36,8 @@
       "title": "CSS Formatter",
       "category": "CSS Tools",
       "categorysty": "dec",
-      "type":"",
-      "link":"/CSSformatter",
+      "type": "",
+      "link": "/CSSformatter",
       "desc": "Beaufity and Format your CSS files"
     },
     {
@@ -47,8 +46,8 @@
       "title": "Minify HTML",
       "category": "HTML Tools",
       "categorysty": "dec",
-      "type":"",
-      "link":"/MinifyHTML",
+      "type": "",
+      "link": "/MinifyHTML",
       "desc": "Minify / compress HTML objects"
     },
     {
@@ -57,8 +56,8 @@
       "title": "HTML Formatter",
       "category": "HTML Tools",
       "categorysty": "dec",
-      "type":"",
-      "link":"/HTMLformatter",
+      "type": "",
+      "link": "/HTMLformatter",
       "desc": "Beaufity and Format your CSS files"
     },
     {
@@ -67,8 +66,8 @@
       "title": "Grammar correction",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"correction",
-      "link":"/aitools/grammarCorrection",
+      "type": "correction",
+      "link": "/aitools/grammarCorrection",
       "desc": "This tool corrects sentences into standard English."
     },
     {
@@ -77,52 +76,50 @@
       "title": "Eng to other languages",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"languageConvertion",
-      "link":"/engToOtherLanguages/languageConvertion",
-      "desc": "Translates English into French, Spanish, and Japanese."   
-    }
-    ,
+      "type": "languageConvertion",
+      "link": "/engToOtherLanguages/languageConvertion",
+      "desc": "Translates English into French, Spanish, and Japanese."
+    },
     {
       "id": 48,
       "image": "images/Q & A.svg",
       "title": "Q & A",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"qa",
-      "link":"/aitools/qa",
-      "desc": "Answer questions based on existing knowledge."   
+      "type": "qa",
+      "link": "/aitools/qa",
+      "desc": "Answer questions based on existing knowledge."
     },
-    
+
     {
       "id": 49,
       "image": "images/summarize.svg",
       "title": "Summarize for a 2nd grader",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"summarize",
-      "link":"/aitools/summarize",
+      "type": "summarize",
+      "link": "/aitools/summarize",
       "desc": "Translates difficult text into simpler concepts."
     },
-  
+
     {
       "id": 50,
       "image": "images/movie to emoji.svg",
       "title": "Movie to Emoji",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"movieEmoji",
-      "link":"/aitools/movieEmoji",
+      "type": "movieEmoji",
+      "link": "/aitools/movieEmoji",
       "desc": "Convert movie titles into emoji."
-    }
-    ,
+    },
     {
       "id": 51,
       "image": "images/keyword selection.svg",
       "title": "Keywords",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"keywordsExtract",
-      "link":"/aitools/keywordsExtract",
+      "type": "keywordsExtract",
+      "link": "/aitools/keywordsExtract",
       "desc": "Extract keywords from a block of text."
     },
     {
@@ -131,8 +128,8 @@
       "title": "Friend Chat",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"friendChat",
-      "link":"/aitools/friendChat",
+      "type": "friendChat",
+      "link": "/aitools/friendChat",
       "desc": "Emulate a text message conversation."
     },
     {
@@ -141,8 +138,8 @@
       "title": "Study Notes",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"studyNotes",
-      "link":"/aitools/studyNotes",
+      "type": "studyNotes",
+      "link": "/aitools/studyNotes",
       "desc": "Provide a topic and get study notes."
     },
     {
@@ -151,8 +148,8 @@
       "title": "Interview Questions",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"interviewQuestions",
-      "link":"/aitools/interviewQuestions",
+      "type": "interviewQuestions",
+      "link": "/aitools/interviewQuestions",
       "desc": "Create interview questions."
     },
     {
@@ -161,8 +158,8 @@
       "title": "Chat With AI",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"chatWithAi",
-      "link":"/aitools/chatWithAi",
+      "type": "chatWithAi",
+      "link": "/aitools/chatWithAi",
       "desc": "Open ended conversation with an AI assistant."
     },
     {
@@ -171,8 +168,8 @@
       "title": "Turn By Turn Directions",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"turnByTurnDirections",
-      "link":"/aitools/turnByTurnDirections",
+      "type": "turnByTurnDirections",
+      "link": "/aitools/turnByTurnDirections",
       "desc": "Convert natural language to turn-by-turn directions."
     },
     {
@@ -181,8 +178,8 @@
       "title": "Essay Outline",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"essayOutline",
-      "link":"/aitools/essayOutline",
+      "type": "essayOutline",
+      "link": "/aitools/essayOutline",
       "desc": "Generate an outline for a research topic."
     },
     {
@@ -191,8 +188,8 @@
       "title": "Notes to Summary",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"notesToSummary",
-      "link":"/aitools/notesToSummary",
+      "type": "notesToSummary",
+      "link": "/aitools/notesToSummary",
       "desc": "Turn meeting notes into a summary."
     },
     {
@@ -201,8 +198,8 @@
       "title": "Analogy Maker",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"analogyMaker",
-      "link":"/aitools/analogyMaker",
+      "type": "analogyMaker",
+      "link": "/aitools/analogyMaker",
       "desc": "Create analogies of phrases"
     },
     {
@@ -211,8 +208,8 @@
       "title": "Classification",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"classification",
-      "link":"/aitools/classification",
+      "type": "classification",
+      "link": "/aitools/classification",
       "desc": "Classify items into categories via example."
     },
     {
@@ -221,8 +218,8 @@
       "title": "Third Person Converter",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"thirdPersonConverter",
-      "link":"/aitools/thirdPersonConverter",
+      "type": "thirdPersonConverter",
+      "link": "/aitools/thirdPersonConverter",
       "desc": "Converts first-person POV to the third-person."
     },
     {
@@ -231,8 +228,8 @@
       "title": "Explain Code",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"explainCode",
-      "link":"/aitools/explainCode",
+      "type": "explainCode",
+      "link": "/aitools/explainCode",
       "desc": "Explain a complicated piece of code."
     },
     {
@@ -241,8 +238,8 @@
       "title": "Tweets Sentiment Classifier",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"tweetSentimentClassifie",
-      "link":"/aitools/tweetSentimentClassifie",
+      "type": "tweetSentimentClassifie",
+      "link": "/aitools/tweetSentimentClassifie",
       "desc": "Classify tweets sentiment , by inputing tweets"
     },
     {
@@ -251,8 +248,8 @@
       "title": "Recipe Maker form Ingredients",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"recipeMakerByIngredients",
-      "link":"/aitools/recipeMakerByIngredients",
+      "type": "recipeMakerByIngredients",
+      "link": "/aitools/recipeMakerByIngredients",
       "desc": "Create a recipe from a list of ingredients."
     },
     {
@@ -261,8 +258,8 @@
       "title": "Micro Horror Story",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"microHorrorStoryMaker",
-      "link":"/aitools/microHorrorStoryMaker",
+      "type": "microHorrorStoryMaker",
+      "link": "/aitools/microHorrorStoryMaker",
       "desc": "Creates two to three sentence short horror stories from a topic input."
     },
     {
@@ -271,8 +268,8 @@
       "title": "Factual Answering",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"factualAnswering",
-      "link":"/aitools/factualAnswering",
+      "type": "factualAnswering",
+      "link": "/aitools/factualAnswering",
       "desc": "Guide the model towards factual answering by showing it how to respond to questions that fall outside its knowledge base. Using a '?' to indicate a response to words and phrases that it doesn't know provides a natural response that seems to work better than more abstract replies"
     },
     {
@@ -281,8 +278,8 @@
       "title": "Javascript Helper Chatbot",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"javascriptHelperChatbot",
-      "link":"/aitools/javascriptHelperChatbot",
+      "type": "javascriptHelperChatbot",
+      "link": "/aitools/javascriptHelperChatbot",
       "desc": "This is a message-style chatbot that can answer questions about using JavaScript."
     },
     {
@@ -291,8 +288,8 @@
       "title": "Science Fiction Books List Maker",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"scienceFictionbooksListMaker",
-      "link":"/aitools/scienceFictionbooksListMaker",
+      "type": "scienceFictionbooksListMaker",
+      "link": "/aitools/scienceFictionbooksListMaker",
       "desc": "Insert amount input and this will makes a list of science fiction books and stops when it reaches 20."
     },
     {
@@ -301,8 +298,8 @@
       "title": "Text Desscription to Color",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"textDescriptionToColor",
-      "link":"/aitools/textDescriptionToColor",
+      "type": "textDescriptionToColor",
+      "link": "/aitools/textDescriptionToColor",
       "desc": "Turn a text description into a color."
     },
     {
@@ -311,8 +308,8 @@
       "title": "JavaScript to Python",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"javascriptToPython",
-      "link":"/aitools/javascriptToPython",
+      "type": "javascriptToPython",
+      "link": "/aitools/javascriptToPython",
       "desc": "Convert simple JavaScript expressions into Python."
     },
     {
@@ -321,8 +318,8 @@
       "title": "JavaScript one line function",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"javascriptOneLinerFunctionConverter",
-      "link":"/aitools/javascriptOneLinerFunctionConverter",
+      "type": "javascriptOneLinerFunctionConverter",
+      "link": "/aitools/javascriptOneLinerFunctionConverter",
       "desc": "Turn a JavaScript function into a one liner."
     },
 
@@ -332,9 +329,9 @@
       "title": "Ad from product description",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"adFromProductDescription",
-      "link":"/aitools/adFromProductDescription",
-      "desc":"Turn a product description into ad copy."
+      "type": "adFromProductDescription",
+      "link": "/aitools/adFromProductDescription",
+      "desc": "Turn a product description into ad copy."
     },
     {
       "id": 75,
@@ -342,9 +339,9 @@
       "title": "ESRB Rating",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"esrbTextRating",
-      "link":"/aitools/esrbTextRating",
-      "desc":"Categorize text based upon ESRB ratings."
+      "type": "esrbTextRating",
+      "link": "/aitools/esrbTextRating",
+      "desc": "Categorize text based upon ESRB ratings."
     },
     {
       "id": 76,
@@ -352,9 +349,9 @@
       "title": "Marv-The sarcastic chatbot",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"marvTheSarcasticChatbot",
-      "link":"/aitools/marvTheSarcasticChatbot",
-      "desc":"Marv is a factual chatbot that is also sarcastic."
+      "type": "marvTheSarcasticChatbot",
+      "link": "/aitools/marvTheSarcasticChatbot",
+      "desc": "Marv is a factual chatbot that is also sarcastic."
     },
     {
       "id": 77,
@@ -362,9 +359,9 @@
       "title": "Calculate Time Complexity",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"calculateTimeComplexity",
-      "link":"/aitools/calculateTimeComplexity",
-      "desc":"Find the time complexity of a function."
+      "type": "calculateTimeComplexity",
+      "link": "/aitools/calculateTimeComplexity",
+      "desc": "Find the time complexity of a function."
     },
     {
       "id": 78,
@@ -372,9 +369,9 @@
       "title": "Python bug fixer",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"pythonBugfixer",
-      "link":"/aitools/pythonBugfixer",
-      "desc":" Add a input if the source code is buggy, and then ask codex to generate a fixed code."
+      "type": "pythonBugfixer",
+      "link": "/aitools/pythonBugfixer",
+      "desc": " Add a input if the source code is buggy, and then ask codex to generate a fixed code."
     },
     {
       "id": 79,
@@ -382,9 +379,9 @@
       "title": "SQL request",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"createSqlQueries",
-      "link":"/aitools/createSqlQueries",
-      "desc":" Create simple SQL queries."
+      "type": "createSqlQueries",
+      "link": "/aitools/createSqlQueries",
+      "desc": " Create simple SQL queries."
     },
     {
       "id": 80,
@@ -392,9 +389,9 @@
       "title": "ML/AI language model tutor",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"mlAiLanguageModelTutor",
-      "link":"/aitools/mlAiLanguageModelTutor",
-      "desc":" This is a QA-style chatbot that answers questions about language models."
+      "type": "mlAiLanguageModelTutor",
+      "link": "/aitools/mlAiLanguageModelTutor",
+      "desc": " This is a QA-style chatbot that answers questions about language models."
     },
     {
       "id": 81,
@@ -402,9 +399,9 @@
       "title": "Extract contact information",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"extractContactInformation",
-      "link":"/aitools/extractContactInformation",
-      "desc":"Extract contact information from a block of text."
+      "type": "extractContactInformation",
+      "link": "/aitools/extractContactInformation",
+      "desc": "Extract contact information from a block of text."
     },
     {
       "id": 82,
@@ -412,9 +409,9 @@
       "title": "Restaurant review creator",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"restaurantReviewCreator",
-      "link":"/aitools/restaurantReviewCreator",
-      "desc":"Turn a few words into a restaurant review."
+      "type": "restaurantReviewCreator",
+      "link": "/aitools/restaurantReviewCreator",
+      "desc": "Turn a few words into a restaurant review."
     },
     {
       "id": 83,
@@ -422,9 +419,9 @@
       "title": "Write a Python docstring",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"writePythonDocString",
-      "link":"/aitools/writePythonDocString",
-      "desc":"generate python docstring by simply input code"
+      "type": "writePythonDocString",
+      "link": "/aitools/writePythonDocString",
+      "desc": "generate python docstring by simply input code"
     },
     {
       "id": 84,
@@ -432,9 +429,9 @@
       "title": "Airport code extractor",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"airportCodeExtractor",
-      "link":"/aitools/airportCodeExtractor",
-      "desc":"A simple prompt for extracting airport codes from text."
+      "type": "airportCodeExtractor",
+      "link": "/aitools/airportCodeExtractor",
+      "desc": "A simple prompt for extracting airport codes from text."
     },
 
     {
@@ -443,9 +440,9 @@
       "title": "VR fitness idea generator",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"vrFitnessIdeaGenerator",
-      "link":"/aitools/vrFitnessIdeaGenerator",
-      "desc":"Enter Amount and get  ideas for fitness and virtual reality games upto 5."
+      "type": "vrFitnessIdeaGenerator",
+      "link": "/aitools/vrFitnessIdeaGenerator",
+      "desc": "Enter Amount and get  ideas for fitness and virtual reality games upto 5."
     },
     {
       "id": 89,
@@ -453,9 +450,9 @@
       "title": "Translate Programming Languages",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"translateProgrammingLanguages",
-      "link":"/tanslateProgrammingLanguages/translateProgrammingLanguages",
-      "desc":"Translate one Programming Language into another programming language"
+      "type": "translateProgrammingLanguages",
+      "link": "/tanslateProgrammingLanguages/translateProgrammingLanguages",
+      "desc": "Translate one Programming Language into another programming language"
     },
     {
       "id": 90,
@@ -463,9 +460,9 @@
       "title": "currency Exchange",
       "category": "AI Tools",
       "categorysty": "dec",
-      "type":"currencyExchange",
-      "link":"/aitools/currencyExchange",
-      "desc":"currencyExchange"
+      "type": "currencyExchange",
+      "link": "/aitools/currencyExchange",
+      "desc": "currencyExchange"
     },
     {
       "id": 91,
@@ -473,9 +470,9 @@
       "title": "temperature Conversion",
       "category": "Conversion Tools",
       "categorysty": "dec",
-      "type":"temperature conversion",
-      "link":"/conversiontools/temperatureConversion",
-      "desc":"currencyExchange"
+      "type": "temperature conversion",
+      "link": "/conversiontools/temperatureConversion",
+      "desc": "currencyExchange"
     },
     {
       "id": 92,
@@ -483,9 +480,9 @@
       "title": "Presurre Conversion",
       "category": "Conversion Tools",
       "categorysty": "dec",
-      "type":"presurre conversion",
-      "link":"/conversiontools/presurreConversion",
-      "desc":"currencyExchange"
+      "type": "presurre conversion",
+      "link": "/conversiontools/presurreConversion",
+      "desc": "currencyExchange"
     },
     {
       "id": 93,
@@ -493,11 +490,9 @@
       "title": "Word Count Tool",
       "category": "Text Tools",
       "categorysty": "dec",
-      "type":"Word Count Tool",
-      "link":"/WordCountTool",
-      "desc":"Generate word count and character count for your document"
+      "type": "Word Count Tool",
+      "link": "/WordCountTool",
+      "desc": "Generate word count and character count for your document"
     }
   ]
-  
 }
-

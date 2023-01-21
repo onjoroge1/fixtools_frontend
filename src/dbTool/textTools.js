@@ -1,6 +1,7 @@
+import { v4 as uuidv4 } from 'uuid';
 const textTool = [
   {
-    id: 6785,
+    id: uuidv4(),
     image: 'images/card-icon-21.png',
     title: 'Remove Space',
     category: 'Text Tools',
@@ -10,7 +11,7 @@ const textTool = [
     desc: 'Tool for removing spaces',
   },
   {
-    id: 220870,
+    id: uuidv4(),
     image: 'images/card-icon-21.png',
     title: 'Extract Email',
     category: 'Text Tools',
@@ -20,7 +21,7 @@ const textTool = [
     desc: 'Tool for removing Extracting Email',
   },
   {
-    id: 2670870,
+    id: uuidv4(),
     image: 'images/card-icon-21.png',
     title: 'Extract Link',
     category: 'Text Tools',

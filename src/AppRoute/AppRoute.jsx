@@ -2,22 +2,20 @@ import React, { Component } from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import DetailPdf from '../Pages/DetailPdf';
 import Home from '../Pages/Home';
-import MinifyCSS from '../Pages/MinifyCSS';
-import MinifyJSON from '../Pages/MinifyJSON';
-import JSONFormatter from '../Pages/JSONFormatter';
-import CSSFormatter from '../Pages/CSSFormatter';
-import HTMLFormatter from '../Pages/HTMLFormatter';
-import MinifyHTML from '../Pages/MinifyHTML';
+import MinifyCSS from '../Pages/CssTool/MinifyCSS';
+import MinifyJSON from '../Pages/JsonTool/MinifyJSON';
+import JSONFormatter from '../Pages/JsonTool/JSONFormatter';
+import CSSFormatter from '../Pages/CssTool/CSSFormatter';
+import HTMLFormatter from '../Pages/HtmlTool.js/HTMLFormatter';
+import MinifyHTML from '../Pages/HtmlTool.js/MinifyHTML';
 import WordcountTool from '../Pages/WordCountTool';
 import AIToolsFormatter from '../Pages/AIToolsFormatter';
-import SpreadSheetGeneretor from '../Pages/spreadsheetGenerator/spreadSheetGeneretor';
 import TranslateProgrammingLanguages from '../Pages/translateProgrammingLanguages/TranslateProgrammingLanguages';
 
 import TimeZone from '../components/timeZone/TimeZone';
 import LanguageTranslator from '../Pages/languageTranslator';
 import TextToPdfFile from '../Pages/textToPdfFile';
 import TimeZoneConverter from '../Pages/timeZoneConverter';
-import Iplocation from '../Pages/Iplocation';
 
 //
 // text tools
@@ -28,7 +26,7 @@ import {
 } from '../Pages/textTools';
 
 //
-import SitemapGenerator from '../Pages/SitemapGenerator';
+import { SitemapGenerator, Iplocation } from '../Pages/seoTools';
 import CompareTwoStrings from '../Pages/CompareTwoStrings';
 
 import { Gradient } from '../Pages/CssTool/Gradient';
@@ -116,6 +114,7 @@ import TsvToJson from '../Pages/JsonTool/TsvToJson';
 import JsonToTsv from '../Pages/JsonTool/JsonToTsv';
 import { NotFound } from '../Pages/404';
 import ScrollTop from '../components/ScrollToTop';
+import { HelmetProvider } from 'react-helmet-async';
 
 export class AppRoute extends Component {
   render() {
@@ -517,10 +516,6 @@ export class AppRoute extends Component {
             <Route
               path='/aitools/:id'
               element={<AIToolsFormatter />}
-            />
-            <Route
-              path='/spreadsheet/:id'
-              element={<SpreadSheetGeneretor />}
             />
 
             <Route

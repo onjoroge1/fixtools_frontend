@@ -5,6 +5,11 @@ import HeaderNav from '../../components/common/HeaderNav';
 import { toast, ToastContainer } from 'react-toastify';
 import { useEffect } from 'react';
 
+import SEO from '../../components/SEO';
+import textTools from '../../dbTool/textTools';
+import { useLocation } from 'react-router-dom';
+import { GetCurrentPageContent } from '../../utils';
+
 export default function ExtractLinks() {
   const [formdata, setformdata] = useState('');
   const [result1, setResult1] = useState();
@@ -13,6 +18,11 @@ export default function ExtractLinks() {
     'Start Typing or paste your document here...'
   );
   const [disableBtn, setDisableBtn] = useState(true);
+
+  const location = useLocation();
+  const path = location.pathname;
+  const { title, desc, image } = GetCurrentPageContent(path, textTools);
+  const pageUrl = window.location.href;
 
   const handleChange = (e) => {
     setformdata(e.target.value);
@@ -83,6 +93,13 @@ export default function ExtractLinks() {
 
   return (
     <div>
+      <SEO
+        title={title}
+        metaDescription={desc}
+        ogImageUrl={image}
+        ogImageAlt={`${title} image`}
+        ogUrl={pageUrl}
+      />
       <div
         className='detail-hero'
         style={{ minHeight: '320px', maxHeight: '320px' }}
